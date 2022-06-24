@@ -1,0 +1,45 @@
+<div class="po-wrapper">
+  <po-toolbar p-title="Aula 001"></po-toolbar>
+
+  <po-menu [p-menus]="menus"></po-menu>
+
+  <po-page-default p-title="Aprendendo po-ui">
+    <p> Vamos la galera pro discord </p>
+
+    <po-button
+      p-label="Botao 01"
+    ></po-button>
+
+    <po-button
+      p-label="Botao 02"
+      [p-loading]="true"
+    ></po-button>
+
+    <po-button
+      p-label="Botao 03"
+      p-icon="po-icon po-icon-database"
+    ></po-button>
+
+
+    <po-button
+    p-label="Botao 04"
+    p-kind="tertiary"
+  ></po-button>
+
+  <po-button
+    p-label="Botao 05"
+    [p-danger]="true"
+  ></po-button>
+
+  <po-button
+      p-icon="po-icon po-icon-database"
+      p-kind="tertiary"
+    ></po-button>
+
+    <po-button
+    [p-disabled]="true"
+    p-label="Botao 07"
+    ></po-button>
+
+  </po-page-default>
+</div>
