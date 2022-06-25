@@ -1,0 +1,22 @@
+<div class="po-wrapper">
+
+  <po-page-default>
+    <h1>Conversor de moedas</h1>
+    <po-accordion>
+      <po-accordion-item p-label="Dolar para real">
+        <div>
+          <po-input [(ngModel)]="dolar" p-placeholder="Insira o valor em dolar" class="po-sm-4"></po-input>
+          <po-input [(ngModel)]="real" p-placeholder="Valor em real" class="po-sm-4"></po-input>
+        </div>
+        <po-button (p-click)="converterDolarToReal()" class="po-sm-12" p-label="Converter para real"></po-button>
+      </po-accordion-item>
+      <po-accordion-item p-label="Real para dolar">
+        <div>
+          <po-input [(ngModel)]="real" p-placeholder="Insira o valor em dolar" class="po-sm-4"></po-input>
+          <po-input [(ngModel)]="dolar" p-placeholder="Valor em real" class="po-sm-4"></po-input>
+        </div>
+        <po-button (p-click)="converterRealToDolar()" class="po-sm-12" p-label="Converter para real"></po-button>
+      </po-accordion-item>
+    </po-accordion>
+  </po-page-default>
+</div>
